@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: rgb(223, 216, 122);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.253);
+        }
+        img {
+            box-shadow: 6px 5px 20px 10px inset rgba(0, 0, 0, 0.144);
+            padding: 25px;
+            background-color: rgb(224, 224, 219);
+        }
+        
+        /*Cabeçário da página*/
+        header {
+            background-color: white;
+            padding: 10px;
+            box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.199);
+            border-radius: 3px;
+        }
+        /*Links*/
+        a {
+            text-decoration: none;
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        nav {
+            background-color: rgba(202, 194, 194, 0.671);
+            box-shadow: 7px 3px 14px rgba(0, 0, 0, 0.322);
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin-top: 20px;
+            box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.288);
+            border-radius: 3px;
+        }
+        /*Desenvolvido por*/
+        footer {
+            padding: 0px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.158);
+        }
+        footer > p {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin-top: 20px;
+        }
+        /*Escrito por*/
+        aside {
+            box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.219)
+            ;
+            background-color: antiquewhite;
+        }
+        /*Todos os direitos*/
+        div {
+            background-color: rgba(168, 168, 168, 0.664);
+            text-align: center;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 15px;
+            background-image: linear-gradient(green 30%, blue, white );
+            border-radius: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px
+        }
+    </style>
+</head>
+<body>
+    <header> <!--O que vai dentro: Logo, nome do site, barra de busca e, quase sempre, o menu de navegação.-->
+        <h1>Meu site</h1>
+        <nav> <!--O que vai dentro: Menu principal, sumários ou paginação.-->
+        <a href="">Notícias</a>
+        <a href="">Finanças</a>
+        <a href="">Contatos</a>
+        <a href="caixa03.html">Sobre</a>
+        </nav>
+    </header>
+    <main> <!--Quando usar: Para envolver o conteúdo exclusivo daquela página específica.
+    Regra de ouro: Só pode existir um <main> visível por página.-->
+        <section id="Notícias"> <!--(Agrupamento): Use para dividir o conteúdo em capítulos ou temas.
+        Exemplos: Uma seção de "Contatos", uma seção de "Últimas Notícias", uma seção de "Sobre nós".-->
+            <p>Principais notícias do Brasil</p>
+        </section>
+        <section id="assuntos">
+            <article id="Ibovespa"> <!--Use quando o conteúdo faz sentido por si só. Se você "recortasse" esse bloco e colasse em outro site, as pessoas entenderiam o que ele é?
+            Exemplos: Uma notícia sobre o Ibovespa, um post de blog, um comentário de usuário.-->
+                <h2>Ultimas notícias sobre o Ibovespa</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nobis exercitationem, quis officiis ipsa tempore quos aliquam architecto provident aperiam nam eveniet reprehenderit. Optio aut nulla asperiores, quod quo placeat.</p>
+                    <aside>
+                        <p>Escrito por: Naruto Uzumaki</p>
+                    </aside> <!--Quando usar: Para informações que são relacionadas ao conteúdo principal, mas não são o foco.
+                    O que vai dentro: Barras laterais, termos de glossário, anúncios ou "veja também".
+                    No seu código: Você usou para colocar o autor. Embora não esteja errado, o <aside> geralmente é algo que "fica de lado".-->
+            </article>
+            <article id="Dólar">
+                <h2>Preço do Dolar aumenta em 0,24%</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit architecto iure accusamus, dolore maxime eveniet non corrupti cupiditate odio, quisquam ex recusandae animi voluptate sunt, atque nam? Molestias, iusto totam.</p>
+                    <aside>
+                        <p>Escrito por: Sasuke Uchiha</p>
+                    </aside>
+                <article>
+                    <h2>Ações da Petrobrás tendem a cair em 2026</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iure asperiores optio repellendus recusandae praesentium qui suscipit culpa temporibus! Tempora quam magni corporis saepe quibusdam itaque veritatis reiciendis officia vero.</p>
+                    <aside>
+                        Fonte: Novo Mundo
+                    </aside>
+                    <article>
+                        <h3>Veja o gráfico do Ibovespa ao longo dos anos</h3>
+                        <p><img src="mídias/grafico-portal.png" alt=""></p>
+                    </article>
+                </article>
+            </article>
+        </section>
+    </main>
+    <div id="bola">Brasil Jornal</div>
+    <div>
+        <p>Todos os direitos reservados</p>
+    </div>
+    <footer>
+        <p>Desenvolvido por Mikael Oliveira</p>
+    </footer> <!--Quando usar: No final da página ou no final de uma seção/artigo.
+
+    O que vai dentro: Direitos autorais (Copyright), links de contato, termos de uso e, às vezes, o nome do autor do artigo.-->
+    
+    
+</body>
+</html>

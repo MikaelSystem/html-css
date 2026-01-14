@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(197, 196, 196);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    color: rgb(24, 119, 0);
+}
+
+h2 {
+    color: rgba(37, 0, 0, 0.877);
+}
+
+.fácil {
+    color: aquamarine;
+}
+
+.médio {
+    color: yellow;
+}
+
+.Difícil {
+    color: red;
+}
+
+.insano {
+    color: blueviolet;
+}
+
+.Nightmare {
+    color: rgb(78, 0, 0);
+}

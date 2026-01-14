@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+
+    <!--Existe diversos tipos de bordas:
+    dashed: tracejado
+    grove: 3d
+    double: duas linhas
+    dotted: pontilhado
+    ridge: cores opostas do 3d
+    -->
+
+    <style>
+        h1:hover {
+            background-color: rgba(144, 238, 144, 0.753);
+            outline: 7px dotted salmon;
+        }
+
+        h1 { /* Block-level */
+            border-style: groove;
+            border-color: lightblue;
+            background-color: lightgreen;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            padding: 10px 10px 10px 10px;
+            margin: 10px 10px 10px 10px;
+        }
+
+        a { /*Inline level*/
+            border-style: ridge;
+            border-color: lightcoral;
+            color: red;
+
+            border-width: 10px; 
+            padding: 10px 10px 10px 10px;
+        }
+    </style>
+
+    <!--Ao invés de usar:
+
+    margin-top:20px;
+    margin-right:10px;
+
+    opte por:
+
+    margin: 20px 10px;
+    -->
+
+</head>
+<body>
+    <h1>Exemplo de caixa block-level</h1>
+    <p>Parágrafos são também exemplos de block-level, os <a href="">Links são exemplos de inline level</a>, vamos olhar isto.</p>
+    
+</body>
+</html>

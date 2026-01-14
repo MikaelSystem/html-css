@@ -1,0 +1,22 @@
+@charset "UTF-8";     
+        
+body {
+    background-color: rgb(220, 212, 248);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+    font-size: xx-large;
+}
+
+h2 {
+    color: rgb(25, 0, 255);
+}
+
+p {
+    color: darkblue;
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas personalizadas</title>
+    <style>
+        h1 {
+            border: 20px solid black;
+            padding: 20px;
+            border-image-source: url(Borda.png);
+            border-image-slice: 27; /*quantos pedaços vão ser divididos*/
+            border-image-repeat: repeat; /*é quantas vezes vai se repetir. "stretch" estica ela*/ 
+        }
+        h6 {
+            border-image: url(Borda.png) 27 repeat /*Uma shorthand*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Essa é uma borda</h1>
+
+</body>
+</html>

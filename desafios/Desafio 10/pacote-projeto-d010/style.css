@@ -1,0 +1,175 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf);
+}
+
+/*Variáveis em CSS:
+o elemento "root" é a raiz de tudo.
+No ex abaixo, você salva as cores.
+
+:root {
+    --cor0: #519331;
+    --cor1: #256F5B
+    --cor2: #89A236
+    }
+*/
+
+:root {
+    --cor0: #519331;
+    --cor1: #256F5B;
+    --cor2: #89A236;
+
+    /*Aqui você adiciona fontes.*/
+
+    --fonte-padrao: helvetica, sans-serif, arial;
+    --fonte-destaque: "Bebas Neue", sans-serif;
+}
+
+/*Para criar um site sem complicações,
+dê margin e padding 0:
+
+* {
+    margin:0px;
+    padding:0px;
+}
+  O asterisco diz que esse código se aplicará em tudo  
+
+  Responsividade é o tamanho do site em relação
+  a outros dispositivos.
+
+*/
+
+body {
+    background-color: #84E1AD;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin: -25px 0px 0px 0px;
+    }
+
+header {
+    background-image: linear-gradient(#25da73,  #195534);
+    margin: auto;
+    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.356);
+}
+
+main {
+    background-color: white;
+    padding: 15px;
+    margin: 0px 50px 10px 50px;
+    box-shadow: 0px 4px 10px 6px rgba(0, 0, 0, 0.308);
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+h1#T1 {
+    text-align: center;
+    padding: 30px 0px 10px 10px;
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 42px;
+}
+h1#T1:hover {
+    color: #bbf3d3;
+}
+p#T12 {
+    text-align: center;
+    padding: 0px 10px 20px 10px;
+    color: white;
+    font-size: 16px;
+}
+nav {
+    padding: 10px;
+}
+nav>a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+nav>a:hover {
+    background-color: #195534;
+    border-radius: 5px;
+    color: #25da73;
+    transition-duration: 500ms;
+}
+
+h1 {
+    font-family: idroid;
+    color: #1F5F3D;
+}
+
+h2 {
+    font-family: idroid;
+    color: #1F5F3D;
+}
+p {
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ iframe {
+    box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.404);
+    margin: 30px 0px;
+    width: 95%;
+    aspect-ratio: 16 /9;
+    /*Para flexibilizar, use %*/
+ }
+ div#na {
+    text-align: center;
+    background-color: #195534;
+    margin: -5px;  
+ }
+ div#sa {
+    text-align: center;
+ }
+ picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+ }
+ section#EXTRA {
+    margin-top: 20px;
+    margin-bottom: -8px;
+    border: 20px solid #25da73;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #25da73;
+    font-size: 17px;
+    color: white;
+    padding: -22px 0px 22px 0px;
+
+p#n2 {
+    margin: -0px 20px 5px 10px;
+}
+    
+ }
+ p#pad1 {
+    padding-bottom: 20px 20px 20px 5;
+ }
+ section#menu {
+    background-color: #bbf3d3;
+    border-radius: 0px 0px 10px 10px;
+    padding: 2px 15px 5px 15px;
+ }
+ p#assuntopsmain {
+    text-indent: 35px;
+ }
+
+ a#linkg {
+    text-decoration: none;
+    color: #277249;
+ }
+ a#linkg::after {
+    content: '📎';
+ }
+
+ ul#version {
+    column-count: 2; /* Divide a lista em 2 colunas */
+    column-gap: 25px; /* Cria um espaço entre as duas colunas */
+}
+ul#version>li::before {
+    content: '✅';
+}
