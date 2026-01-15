@@ -173,3 +173,7 @@ p#n2 {
 ul#version>li::before {
     content: '✅';
 }
+aside {
+    background-color: black;
+    color: white;
+}
