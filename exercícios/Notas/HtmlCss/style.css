@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {    
+}
+
+header {
+    padding: 10px;
+    background-color: rgb(148, 180, 180);
+}
+
