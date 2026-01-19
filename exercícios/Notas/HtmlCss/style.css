@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --fonte-google: "Google Sans", sans-serif;
+
+    --fonte-elegante: "Tinos", serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -72,6 +82,17 @@ div.intro {
     border-radius: 10px;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--fonte-elegante);
+}
+
+div.intro>article>div>p {
+    font-family: var(--fonte-google);
+    font-weight: lighter;
+    color: rgba(240, 248, 255, 0.955);
+}
+
+
 article {
     padding: 13px;
     font-size: 23px;
@@ -91,10 +112,11 @@ div.intro>article>div>p {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.486);
 }
 
-main>article>div>p {
+p {
     padding-top: 8px;
     padding-bottom: 8px;
     text-shadow: 2px 2px 10px rgba(12, 0, 0, 0.199);
+    font-family: var(--fonte-google);
 }
 
 main {
@@ -106,4 +128,25 @@ main {
     color: rgb(0, 0, 0);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.377);
     border-radius: 1px;
+}
+
+.stripes {
+    background-image: linear-gradient(rgba(128, 128, 128, 0.115), rgba(255, 255, 255, 0.074), rgba(128, 128, 128, 0.094));
+}
+
+.ajuste {
+    margin-top: 10px;
+}
+
+h3,h4,h5,h6.indent {
+    text-indent: 10px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    text-decoration: underline;
+    text-decoration-color: rgb(175, 4, 243);
+}
+
+.indent::before {
+    content: "* ";
+    color: rgb(255, 0, 238);
 }
