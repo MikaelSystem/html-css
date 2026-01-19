@@ -47,7 +47,7 @@ header>nav>a {
 .uniq:hover {
     background-color: rgba(0, 0, 0, 0.185);
     transition-duration: 0.5s;
-    color: rgba(0, 255, 255, 0.438);
+    color: rgba(0, 255, 255, 0.459);
 }
 
 .menu {
