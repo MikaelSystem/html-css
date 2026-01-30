@@ -27,6 +27,7 @@
 <body>
     <h1>Uso de grandes Tabelas</h1>
     <!--ANATOMIA PARA TABELAS GRANDES
+    CAPTION = legenda
     TABLE
         THEAD
             TR,TD,TH
@@ -34,12 +35,16 @@
             TR,TD,TH
         TFOOT
             TR,TD,TH
+            SCOPE É USADO PARA SABER ONDE ESTÃO AS INFORMAÇÕES RELACIONADAS DO MESMO, TÉCNICAS DE SEO
+
+            scope="col" = informações relacionadas na mesma coluna.
+            scope="row" = informações relacionadas na mesma linha.
     -->
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
 
@@ -64,7 +69,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td>
                     <strong>
                     99.942.966
