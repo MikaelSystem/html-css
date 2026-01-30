@@ -7,10 +7,12 @@
     <style>
         body {
             background-color: rgb(141, 141, 141);
+            height: 1700px;
         }
 
         table {
             width: 500px;
+            position: relative; /*primeiro passo*/
         }
         
         td, th {
@@ -18,9 +20,20 @@
             padding: 10px;
         }
 
+        thead > tr >th { /*Segundo passo*/
+            position: sticky;
+            top: -1px;
+            background-color: grey
+        }
+
         thead {
             background-color: grey;
             color: white;
+        }
+
+        tbody  > tr:nth-child(2n) { /*Efeito zebrado de 2 em 2.
+            odd = impar. even = par*/
+            background-color: rgb(163, 162, 162);
         }
     </style>
 </head>
@@ -79,5 +92,6 @@
 
         </tfoot>
     </table>
+    
 </body>
 </html>
