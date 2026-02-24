@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*estilo para impressoras*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+article::after {
+    content: 'Esse artigo foi impresso através do site systemikael.com';
+}
+
+header {
+    background-color: lightblue;
+}
+
+header>h1 {
+    text-align: center;
+}
+
+menu ul {
+    list-style-type: none;
+    background-color: lightcoral;
+}
+
+menu li {
+    background-color: lightseagreen;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+
+article {
+    width: 100%;
+}
