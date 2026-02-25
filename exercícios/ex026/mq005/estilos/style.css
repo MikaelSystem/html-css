@@ -15,7 +15,7 @@ header>h1 {
     padding: 10px;
 }
 
-header>span#abrir {
+span#abrir {
     display: block;
     background-color: rgba(0, 0, 0, 0.712);
     color: white;
@@ -27,11 +27,6 @@ span#abrir:hover {
     background-color: rgb(255, 255, 255);
     color: black;
     cursor: pointer;
-
-}
-
-menu {
-    display: none;
 }
 
 menu>ul>li>a {
